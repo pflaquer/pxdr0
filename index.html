@@ -1,6 +1,80 @@
 <!DOCTYPE html>
 <head>
+  <title>
+    OXFF77 \\  @%% \\ 
+  </title>
+  <style>
+body {
+    background-color: black;
+    color: #00FF00; 
+    font-family: "Courier-New",monospace; 
+    padding: 20px;
+    animation: glitch 2S infinite;
+ 
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 0 #f00, -2px 0 #0f0;
+ }
+    25% { text-shadow: -2px 0 #00f, 2px 0 #ff0; }
+    50% { text-shadow: 2px 0 #f0f, -2px 0 #0ff; }
+    75% { text-shadow: -2px 0 #ff0, 2px 0 #0f0; }
+}
+
+.terminal {
+    border: 2px solid #00FF00;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-image: url('#'); 
+    opacity: 0.2; 
+    pointer-events: none; 
+}
+
+.input {
+  display:flex;
+  flex-direction:row;
+  background-color:black;
   
+  
+}
+
+input {
+  background:black;
+  color:#00FF00;
+  border-style:none;
+  animation: glitch 0.5s infinite;
+  filter:blur(3px;);
+  font-family: "Courier-New",monospace; 
+  
+}
+
+ul{
+ list-style:none;
+}
+
+.sequence{
+  display:none;
+}
+
+.visible {
+  display:block;
+}
+
+.rootshell {
+  
+}
+
+    
+  </style>
 </head>
 <body></body>
 <script src="main.js">
